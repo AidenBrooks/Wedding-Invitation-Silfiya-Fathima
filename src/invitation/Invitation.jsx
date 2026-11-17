@@ -8,10 +8,9 @@ import { VideoHome } from "./home.jsx";
 import { FloatingDock } from "./dock.jsx";
 import { Block, FlipCountdown, GreyHeartRule, HeartDate, ProgramTimeline, ScriptTitle, TinyHeart } from "./sections.jsx";
 import { COPY, PROGRAM, PRESENCE, MAPS_URL, MAPS_EMBED, saveTheDate } from "./copy.js";
-import { asset, store } from "./util.js";
+import { store } from "./util.js";
 
 const SAGE_FOIL = ["#7f8b5c", "#c3caa0", "#99a571", "#626e45"];
-const MONOGRAM = asset("assets/monogram-cocoa.webp");
 const UNLOCK_MS = 9500; // home stays locked until every line of wording has appeared
 
 function Invitation({ lang, setLang, opened }) {
@@ -36,14 +35,9 @@ function Invitation({ lang, setLang, opened }) {
         <VideoHome c={c} lang={lang} ta={ta} opened={opened} />
 
         <div className="nk-green">
-          {/* AS monogram watermark, fixed mid-screen behind every section */}
-          <div aria-hidden="true" style={{ position: "sticky", top: "50%", height: 0, zIndex: 0, pointerEvents: "none" }}>
-            <img src={MONOGRAM} alt="" style={{ position: "absolute", left: "50%", top: 0, width: 240, height: 240, objectFit: "contain", transform: "translate(-50%,-50%)", opacity: 0.1 }} />
-          </div>
-
           <Block label="02 Wording" pad="64px 34px 48px" gap={20}>
-            <Reveal root={sc}><div style={{ fontFamily: body, fontWeight: 700, fontSize: ta ? 17 : 22, lineHeight: 1.35, letterSpacing: ta ? 0 : ".01em", color: "var(--text-ink)", textWrap: "balance" }}>{c.host}</div></Reveal>
-            <Reveal root={sc} delay={140}><p style={{ margin: 0, fontFamily: body, fontSize: ta ? 15 : 20, lineHeight: ta ? 1.85 : 1.55, fontStyle: ta ? "normal" : "italic", color: "var(--text-ink)", textWrap: "pretty" }}>{c.invite}</p></Reveal>
+            <Reveal root={sc}><div style={{ fontFamily: body, fontWeight: 700, fontSize: ta ? 17 : 20, lineHeight: 1.4, letterSpacing: ta ? 0 : ".01em", color: "var(--text-ink)", textWrap: "balance" }}>{c.host}</div></Reveal>
+            <Reveal root={sc} delay={140}><p style={{ margin: 0, fontFamily: body, fontSize: ta ? 15 : 18, lineHeight: ta ? 1.85 : 1.65, fontStyle: ta ? "normal" : "italic", color: "var(--text-ink)", textWrap: "pretty" }}>{c.invite}</p></Reveal>
             <Reveal root={sc} delay={260}><TinyHeart w={90} /></Reveal>
           </Block>
 
