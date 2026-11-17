@@ -7,7 +7,7 @@ export const COPY = {
     scratch: "Scratch to Reveal", forever: "Our forever begins", invited: "You're Invited",
     dateLong: "December 30, 2026", weekday: "Wednesday", time: "Around 11:30 AM", hijri: "Rajab 20, 1448 AH",
     save: "Save the date", maps: "View on maps", venue: "Venue", countdown: "Counting Down to Forever",
-    vName: "Haji Habeeb Memorial Shadi Mahal", vAddr: "Pallapatti · Feast: Pulavar Habeebullah Old Mahal", vTime: "Nikkah: Around 11:30 AM",
+    vName: "Pulavar Habeebullah Old Mahal", vAddr: "Pallapatti", vTime: "Nikkah: Around 11:30 AM",
     presence: "Presence Expecting", credit: "Designed by Absze Technology", scrollDown: "Scroll down",
   },
   ta: {
@@ -23,8 +23,8 @@ export const COPY = {
 };
 
 export const NAMES = {
-  en: { bride: "S.M. Silfiya Fathima", brideTitle: "Hifz.", brideParent: "Daughter of Savvas S.M. Musthaq Ali; granddaughter of Mohamed Ali and Abdul Rahman", groom: "S.R. Mohamed Suhail", groomTitle: "B.E. (Mech.)", groomParent: "Son of S.K.Y. Rafiq Ali @ Babu; grandson of S.K.Y. Mohamed Yakub and Haji K.S. Sowkath Ali" },
-  ta: { bride: "S.M. சில்பியா பாத்திமா", brideTitle: "Hifz.", brideParent: "சவ்வாஸ் S.M. முஸ்தாக் அலி அவர்களின் மகள்; முகமது அலி மற்றும் அப்துல் ரஹ்மான் அவர்களின் பேத்தி", groom: "S.R. முகமது சுஹைல்", groomTitle: "B.E. (Mech.)", groomParent: "S.K.Y. ரஃபீக் அலி @ பாபு அவர்களின் மகன்; S.K.Y. முகமது யாகூப் மற்றும் K.S. சௌகத் அலி அவர்களின் பேரன்" },
+  en: { bride: "Silfiya Fathima", brideTitle: "Hifz.", brideParent: "Daughter of Savvas S.M. Musthaq Ali; granddaughter of Mohamed Ali and Abdul Rahman", groom: "Mohamed Suhail", groomTitle: "B.E. (Mech.)", groomParent: "Son of S.K.Y. Rafiq Ali @ Babu; grandson of S.K.Y. Mohamed Yakub and Haji K.S. Sowkath Ali" },
+  ta: { bride: "சில்பியா பாத்திமா", brideTitle: "Hifz.", brideParent: "சவ்வாஸ் S.M. முஸ்தாக் அலி அவர்களின் மகள்; முகமது அலி மற்றும் அப்துல் ரஹ்மான் அவர்களின் பேத்தி", groom: "முகமது சுஹைல்", groomTitle: "B.E. (Mech.)", groomParent: "S.K.Y. ரஃபீக் அலி @ பாபு அவர்களின் மகன்; S.K.Y. முகமது யாகூப் மற்றும் K.S. சௌகத் அலி அவர்களின் பேரன்" },
 };
 
 export const PROGRAM = {
@@ -40,7 +40,7 @@ export const PRESENCE = {
 };
 
 export const EVENT_START = "2026-12-30T11:30:00+05:30";
-const VENUE_Q = "Haji Habeeb Memorial Shadi Mahal, Pallapatti";
+const VENUE_Q = "Pulavar Habeebullah Old Mahal, Pallapatti";
 export const MAPS_URL = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(VENUE_Q);
 export const MAPS_EMBED = "https://maps.google.com/maps?q=" + encodeURIComponent(VENUE_Q) + "&z=15&output=embed";
 
@@ -48,7 +48,7 @@ const CAL = {
   title: "Nikkah of S.M. Silfiya Fathima & S.R. Mohamed Suhail",
   start: "20261230T060000Z", end: "20261230T063000Z", // 11:30 AM – 12:00 PM IST
   location: "Haji Habeeb Memorial Shadi Mahal, Pallapatti",
-  details: "Nikkah around 11:30 AM at Haji Habeeb Memorial Shadi Mahal, Pallapatti. Breakfast and lunch at Pulavar Habeebullah Old Mahal, Pallapatti.",
+  details: "Nikkah around 11:30 AM. Breakfast and lunch at Pulavar Habeebullah Old Mahal, Pallapatti.",
 };
 const GOOGLE_CAL = "https://calendar.google.com/calendar/render?action=TEMPLATE"
   + "&text=" + encodeURIComponent(CAL.title) + "&dates=" + CAL.start + "/" + CAL.end
