@@ -47,7 +47,7 @@ export const MAPS_EMBED = "https://maps.google.com/maps?q=" + encodeURIComponent
 const CAL = {
   title: "Nikkah of S.M. Silfiya Fathima & S.R. Mohamed Suhail",
   start: "20261230T060000Z", end: "20261230T063000Z", // 11:30 AM – 12:00 PM IST
-  location: "Haji Habeeb Memorial Shadi Mahal, Pallapatti",
+  location: "Pulavar Habeebullah Old Mahal, Pallapatti",
   details: "Nikkah around 11:30 AM. Breakfast and lunch at Pulavar Habeebullah Old Mahal, Pallapatti.",
 };
 const GOOGLE_CAL = "https://calendar.google.com/calendar/render?action=TEMPLATE"
