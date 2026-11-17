@@ -1,4 +1,4 @@
-# Sulaiha & Ahnaf · Nikkah invitation (web)
+# S.M. Silfiya Fathima & S.R. Mohamed Suhail · Nikkah invitation (web)
 
 Production build of the Claude Design prototype `project/ui_kits/invitation/index.html`.
 Vite + React. It builds to a static site, so it can be hosted anywhere and shared as a WhatsApp link.
